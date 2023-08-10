@@ -1,5 +1,6 @@
 import React from 'react';
 import './Profile.css';
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
   return (
@@ -11,6 +12,10 @@ const Profile = () => {
       <div className="profile-image-container">
         <div className="profile-image"></div>
       </div>
+
+      <Link to={"/"}>
+        nav to
+      </Link>
       
       <h1>
         name

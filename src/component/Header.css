@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    animation: fadeInDown 0.5s ease-in-out;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .header:hover {
+    background-color: #444;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .menu-icon,
+  .dots-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+.menu-icon:hover,
+.dots-icon:hover {
+  color: #ffca28;
+  transform: translateY(-2px);
+}
+  
+ .logo {
+   font-size: 24px;
+   font-weight: bold;
+ }
+
+ .spin {
+    animation: spin 0.5s linear forwards;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }

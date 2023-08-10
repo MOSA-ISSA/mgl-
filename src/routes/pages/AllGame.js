@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../component/Card';
+import { Link } from 'react-router-dom';
 
 // var arr = ["a","b","c","d","f","e","g","h"]
 
@@ -31,6 +32,13 @@ const AllGame = () => {
     return (
         <div className='page' style={{background:"#252525"}}>
             <h1>AllGame</h1>
+                {/* <nav> */}
+                    {/* <ul> */}
+                        <Link to={"Profile"}>
+                        nav to
+                        </Link>
+                    {/* </ul> */}
+                {/* </nav> */}
                 <RenderCard/>
             
             
